@@ -15,10 +15,11 @@ protocol BluetoothCoreProtocol: class {
 
 class TransmitSession {
     var pendingData: NSData
-    var offset: Int = 0
-    var maxSize: Int = 18
+    var offset: Int
+    var maxSize: Int
     
-    init(data: NSData, maxSize: Int) {
+    init(data: NSData, maxSize: Int = 18) {
+        self.offset = 0
         self.pendingData = data.copy() as NSData
         self.maxSize = maxSize
     }
@@ -132,6 +133,7 @@ class BluetoothCore: NSObject, CBCentralManagerDelegate, CBPeripheralManagerDele
     }
     
     // MARK: - CBCentralManagerDelegate
+    
     func centralManagerDidUpdateState(central: CBCentralManager!) {
         if central.state == CBCentralManagerState.PoweredOn {
             NSLog("Central Manager is ready!")
@@ -214,6 +216,7 @@ class BluetoothCore: NSObject, CBCentralManagerDelegate, CBPeripheralManagerDele
     }
     
     // MARK: - CBPeripheralManagerDelegate
+    
     func peripheralManagerDidUpdateState(peripheral: CBPeripheralManager!) {
         if peripheral.state == CBPeripheralManagerState.PoweredOn {
             NSLog("Peripheral Manager is ready!")
