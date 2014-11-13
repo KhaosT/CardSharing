@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CCB3C4A81A146BCC00C59CEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB3C4A71A146BCC00C59CEB /* AppDelegate.swift */; };
+		CCB3C4AA1A146BCC00C59CEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB3C4A91A146BCC00C59CEB /* ViewController.swift */; };
+		CCB3C4AD1A146BCC00C59CEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCB3C4AB1A146BCC00C59CEB /* Main.storyboard */; };
+		CCB3C4AF1A146BCC00C59CEB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCB3C4AE1A146BCC00C59CEB /* Images.xcassets */; };
+		CCB3C4B21A146BCC00C59CEB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCB3C4B01A146BCC00C59CEB /* LaunchScreen.xib */; };
+		CCB3C4BE1A146BCC00C59CEB /* CardSharingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB3C4BD1A146BCC00C59CEB /* CardSharingTests.swift */; };
+		CCB3C4C81A146BDE00C59CEB /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB3C4C71A146BDE00C59CEB /* Card.swift */; };
+		CCB3C4CA1A146C6800C59CEB /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB3C4C91A146C6800C59CEB /* AddressBookUI.framework */; };
+		CCB3C4CC1A146E3C00C59CEB /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB3C4CB1A146E3C00C59CEB /* AddressBook.framework */; };
+		CCB3C4CE1A146F6D00C59CEB /* BluetoothCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB3C4CD1A146F6D00C59CEB /* BluetoothCore.swift */; };
+		CCB3C4D01A146F7500C59CEB /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB3C4CF1A146F7500C59CEB /* CoreBluetooth.framework */; };
+		CCB3C4D21A148B1A00C59CEB /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB3C4D11A148B1A00C59CEB /* CardViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCB3C4B81A146BCC00C59CEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCB3C49A1A146BCC00C59CEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCB3C4A11A146BCC00C59CEB;
+			remoteInfo = CardSharing;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CCB3C4A21A146BCC00C59CEB /* CardSharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardSharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCB3C4A61A146BCC00C59CEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCB3C4A71A146BCC00C59CEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CCB3C4A91A146BCC00C59CEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CCB3C4AC1A146BCC00C59CEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCB3C4AE1A146BCC00C59CEB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CCB3C4B11A146BCC00C59CEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CCB3C4B71A146BCC00C59CEB /* CardSharingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardSharingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCB3C4BC1A146BCC00C59CEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCB3C4BD1A146BCC00C59CEB /* CardSharingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSharingTests.swift; sourceTree = "<group>"; };
+		CCB3C4C71A146BDE00C59CEB /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		CCB3C4C91A146C6800C59CEB /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		CCB3C4CB1A146E3C00C59CEB /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		CCB3C4CD1A146F6D00C59CEB /* BluetoothCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothCore.swift; sourceTree = "<group>"; };
+		CCB3C4CF1A146F7500C59CEB /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		CCB3C4D11A148B1A00C59CEB /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCB3C49F1A146BCC00C59CEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCB3C4D01A146F7500C59CEB /* CoreBluetooth.framework in Frameworks */,
+				CCB3C4CC1A146E3C00C59CEB /* AddressBook.framework in Frameworks */,
+				CCB3C4CA1A146C6800C59CEB /* AddressBookUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCB3C4B41A146BCC00C59CEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CCB3C4991A146BCC00C59CEB = {
+			isa = PBXGroup;
+			children = (
+				CCB3C4CF1A146F7500C59CEB /* CoreBluetooth.framework */,
+				CCB3C4CB1A146E3C00C59CEB /* AddressBook.framework */,
+				CCB3C4C91A146C6800C59CEB /* AddressBookUI.framework */,
+				CCB3C4A41A146BCC00C59CEB /* CardSharing */,
+				CCB3C4BA1A146BCC00C59CEB /* CardSharingTests */,
+				CCB3C4A31A146BCC00C59CEB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CCB3C4A31A146BCC00C59CEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCB3C4A21A146BCC00C59CEB /* CardSharing.app */,
+				CCB3C4B71A146BCC00C59CEB /* CardSharingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCB3C4A41A146BCC00C59CEB /* CardSharing */ = {
+			isa = PBXGroup;
+			children = (
+				CCB3C4A71A146BCC00C59CEB /* AppDelegate.swift */,
+				CCB3C4A91A146BCC00C59CEB /* ViewController.swift */,
+				CCB3C4D11A148B1A00C59CEB /* CardViewController.swift */,
+				CCB3C4CD1A146F6D00C59CEB /* BluetoothCore.swift */,
+				CCB3C4C71A146BDE00C59CEB /* Card.swift */,
+				CCB3C4AB1A146BCC00C59CEB /* Main.storyboard */,
+				CCB3C4AE1A146BCC00C59CEB /* Images.xcassets */,
+				CCB3C4B01A146BCC00C59CEB /* LaunchScreen.xib */,
+				CCB3C4A51A146BCC00C59CEB /* Supporting Files */,
+			);
+			path = CardSharing;
+			sourceTree = "<group>";
+		};
+		CCB3C4A51A146BCC00C59CEB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCB3C4A61A146BCC00C59CEB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CCB3C4BA1A146BCC00C59CEB /* CardSharingTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCB3C4BD1A146BCC00C59CEB /* CardSharingTests.swift */,
+				CCB3C4BB1A146BCC00C59CEB /* Supporting Files */,
+			);
+			path = CardSharingTests;
+			sourceTree = "<group>";
+		};
+		CCB3C4BB1A146BCC00C59CEB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCB3C4BC1A146BCC00C59CEB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCB3C4A11A146BCC00C59CEB /* CardSharing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCB3C4C11A146BCC00C59CEB /* Build configuration list for PBXNativeTarget "CardSharing" */;
+			buildPhases = (
+				CCB3C49E1A146BCC00C59CEB /* Sources */,
+				CCB3C49F1A146BCC00C59CEB /* Frameworks */,
+				CCB3C4A01A146BCC00C59CEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CardSharing;
+			productName = CardSharing;
+			productReference = CCB3C4A21A146BCC00C59CEB /* CardSharing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCB3C4B61A146BCC00C59CEB /* CardSharingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCB3C4C41A146BCC00C59CEB /* Build configuration list for PBXNativeTarget "CardSharingTests" */;
+			buildPhases = (
+				CCB3C4B31A146BCC00C59CEB /* Sources */,
+				CCB3C4B41A146BCC00C59CEB /* Frameworks */,
+				CCB3C4B51A146BCC00C59CEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCB3C4B91A146BCC00C59CEB /* PBXTargetDependency */,
+			);
+			name = CardSharingTests;
+			productName = CardSharingTests;
+			productReference = CCB3C4B71A146BCC00C59CEB /* CardSharingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCB3C49A1A146BCC00C59CEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Oltica;
+				TargetAttributes = {
+					CCB3C4A11A146BCC00C59CEB = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					CCB3C4B61A146BCC00C59CEB = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = CCB3C4A11A146BCC00C59CEB;
+					};
+				};
+			};
+			buildConfigurationList = CCB3C49D1A146BCC00C59CEB /* Build configuration list for PBXProject "CardSharing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCB3C4991A146BCC00C59CEB;
+			productRefGroup = CCB3C4A31A146BCC00C59CEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCB3C4A11A146BCC00C59CEB /* CardSharing */,
+				CCB3C4B61A146BCC00C59CEB /* CardSharingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCB3C4A01A146BCC00C59CEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCB3C4AD1A146BCC00C59CEB /* Main.storyboard in Resources */,
+				CCB3C4B21A146BCC00C59CEB /* LaunchScreen.xib in Resources */,
+				CCB3C4AF1A146BCC00C59CEB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCB3C4B51A146BCC00C59CEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCB3C49E1A146BCC00C59CEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCB3C4AA1A146BCC00C59CEB /* ViewController.swift in Sources */,
+				CCB3C4CE1A146F6D00C59CEB /* BluetoothCore.swift in Sources */,
+				CCB3C4C81A146BDE00C59CEB /* Card.swift in Sources */,
+				CCB3C4D21A148B1A00C59CEB /* CardViewController.swift in Sources */,
+				CCB3C4A81A146BCC00C59CEB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCB3C4B31A146BCC00C59CEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCB3C4BE1A146BCC00C59CEB /* CardSharingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCB3C4B91A146BCC00C59CEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCB3C4A11A146BCC00C59CEB /* CardSharing */;
+			targetProxy = CCB3C4B81A146BCC00C59CEB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CCB3C4AB1A146BCC00C59CEB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCB3C4AC1A146BCC00C59CEB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CCB3C4B01A146BCC00C59CEB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCB3C4B11A146BCC00C59CEB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCB3C4BF1A146BCC00C59CEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CCB3C4C01A146BCC00C59CEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCB3C4C21A146BCC00C59CEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CardSharing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CCB3C4C31A146BCC00C59CEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CardSharing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CCB3C4C51A146BCC00C59CEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CardSharingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CardSharing.app/CardSharing";
+			};
+			name = Debug;
+		};
+		CCB3C4C61A146BCC00C59CEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CardSharingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CardSharing.app/CardSharing";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCB3C49D1A146BCC00C59CEB /* Build configuration list for PBXProject "CardSharing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCB3C4BF1A146BCC00C59CEB /* Debug */,
+				CCB3C4C01A146BCC00C59CEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCB3C4C11A146BCC00C59CEB /* Build configuration list for PBXNativeTarget "CardSharing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCB3C4C21A146BCC00C59CEB /* Debug */,
+				CCB3C4C31A146BCC00C59CEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CCB3C4C41A146BCC00C59CEB /* Build configuration list for PBXNativeTarget "CardSharingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCB3C4C51A146BCC00C59CEB /* Debug */,
+				CCB3C4C61A146BCC00C59CEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCB3C49A1A146BCC00C59CEB /* Project object */;
+}

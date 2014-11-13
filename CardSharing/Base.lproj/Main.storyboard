@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B23" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="CardSharing" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFV-Xj-0Fx">
+                                <rect key="frame" x="254" y="285" width="91" height="30"/>
+                                <state key="normal" title="Pick the card">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickupCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3ys-x4-YCi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="tFV-Xj-0Fx" secondAttribute="centerY" id="mVo-bd-J5e"/>
+                            <constraint firstAttribute="centerX" secondItem="tFV-Xj-0Fx" secondAttribute="centerX" id="tbY-9O-CLI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="283" y="409"/>
+        </scene>
+        <!--Card View Controller-->
+        <scene sceneID="U73-Fs-Fnc">
+            <objects>
+                <viewController storyboardIdentifier="CardViewController" id="MDr-K7-45e" customClass="CardViewController" customModule="CardSharing" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kNH-td-HBm"/>
+                        <viewControllerLayoutGuide type="bottom" id="oFQ-BB-PKn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p0i-bv-TtT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DRQ-r8-0jJ">
+                                <rect key="frame" x="160" y="215" width="280" height="170"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ONl-UX-PCo">
+                                        <rect key="frame" x="8" y="8" width="264" height="86"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="264" id="Oc9-TS-3n3"/>
+                                            <constraint firstAttribute="height" constant="86" id="mkI-GN-rOE"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Label">
+                                                <attributes>
+                                                    <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VmE-Co-b5V">
+                                        <rect key="frame" x="8" y="102" width="264" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="i1I-oM-2aA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0b-Yo-NrO">
+                                        <rect key="frame" x="8" y="131" width="264" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="pd9-Km-i4D"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="93l-Je-PA1"/>
+                                    <constraint firstItem="ONl-UX-PCo" firstAttribute="leading" secondItem="DRQ-r8-0jJ" secondAttribute="leading" constant="8" id="Dp7-Cl-ZvO"/>
+                                    <constraint firstAttribute="width" constant="280" id="NSB-fu-Kix"/>
+                                    <constraint firstAttribute="trailing" secondItem="j0b-Yo-NrO" secondAttribute="trailing" constant="8" id="TfZ-9y-Deb"/>
+                                    <constraint firstItem="ONl-UX-PCo" firstAttribute="top" secondItem="DRQ-r8-0jJ" secondAttribute="top" constant="8" id="coe-qk-nPh"/>
+                                    <constraint firstItem="VmE-Co-b5V" firstAttribute="top" secondItem="ONl-UX-PCo" secondAttribute="bottom" constant="8" id="cxA-SF-GEC"/>
+                                    <constraint firstItem="VmE-Co-b5V" firstAttribute="leading" secondItem="DRQ-r8-0jJ" secondAttribute="leading" constant="8" id="isy-E0-PgM"/>
+                                    <constraint firstAttribute="trailing" secondItem="ONl-UX-PCo" secondAttribute="trailing" constant="8" id="nfn-Np-iP4"/>
+                                    <constraint firstItem="j0b-Yo-NrO" firstAttribute="top" secondItem="VmE-Co-b5V" secondAttribute="bottom" constant="8" id="qBP-UY-iOl"/>
+                                    <constraint firstAttribute="trailing" secondItem="VmE-Co-b5V" secondAttribute="trailing" constant="8" id="rMO-Ot-arx"/>
+                                    <constraint firstItem="j0b-Yo-NrO" firstAttribute="leading" secondItem="DRQ-r8-0jJ" secondAttribute="leading" constant="8" id="sfj-1j-fkg"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="883-ct-glv">
+                                <rect key="frame" x="269" y="415" width="62" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="2dA-aW-fBi"/>
+                                    <constraint firstAttribute="width" constant="62" id="enS-UJ-is4"/>
+                                </constraints>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="stopBroadcasting:" destination="MDr-K7-45e" eventType="touchUpInside" id="OfY-CP-xvD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="DRQ-r8-0jJ" secondAttribute="centerY" id="5g9-yk-BOo"/>
+                            <constraint firstAttribute="centerX" secondItem="883-ct-glv" secondAttribute="centerX" id="6fd-pP-Lx3"/>
+                            <constraint firstAttribute="centerX" secondItem="DRQ-r8-0jJ" secondAttribute="centerX" id="9YF-Yy-cCK"/>
+                            <constraint firstItem="883-ct-glv" firstAttribute="top" secondItem="DRQ-r8-0jJ" secondAttribute="bottom" constant="30" id="EQl-jT-sAT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="ONl-UX-PCo" id="ztc-Yv-ZI7"/>
+                        <outlet property="subtextLabel1" destination="VmE-Co-b5V" id="u6p-wa-o3y"/>
+                        <outlet property="subtextLabel2" destination="j0b-Yo-NrO" id="B20-9y-wsH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SOd-pk-uJu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="283" y="-339"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="close" width="62" height="62"/>
+    </resources>
+</document>
