@@ -24,7 +24,7 @@ class Card: Printable {
     init(data: NSData) {
         let adressBook: ABAddressBook = ABAddressBookCreateWithOptions(nil, nil).takeUnretainedValue()
         let source: ABRecord = ABAddressBookCopyDefaultSource(adressBook).takeUnretainedValue()
-        let people: [ABRecord] = ABPersonCreatePeopleInSourceWithVCardRepresentation(source, data).takeUnretainedValue()
+        let people: [ABRecord] = ABPersonCreatePeopleInSourceWithVCardRepresentation(source, data).takeUnretainedValue() as [ABRecord]
         self.personInfo = people[0]
         self.processABRecord()
     }

@@ -52,7 +52,7 @@ class ViewController: UIViewController, ABPeoplePickerNavigationControllerDelega
     
     func didGetNewCard(card: Card) {
         self.bluetoothCore?.stopScan()
-        let cardVC = self.storyboard?.instantiateViewControllerWithIdentifier("CardViewController") as CardViewController
+        let cardVC = self.storyboard?.instantiateViewControllerWithIdentifier("CardViewController") as! CardViewController
         cardVC.infoCard = card
         cardVC.callback = self
         self.presentViewController(cardVC, animated: true, completion: nil)

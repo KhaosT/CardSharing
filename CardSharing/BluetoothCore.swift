@@ -20,7 +20,7 @@ class TransmitSession {
     
     init(data: NSData, maxSize: Int = 18) {
         self.offset = 0
-        self.pendingData = data.copy() as NSData
+        self.pendingData = data.copy() as! NSData
         self.maxSize = maxSize
     }
     
@@ -57,7 +57,7 @@ class BluetoothCore: NSObject, CBCentralManagerDelegate, CBPeripheralManagerDele
     var targetPeripheral: CBPeripheral?
     
     var dataBuffer = NSMutableData()
-    var endData = NSData(bytes: [0x45,0x4E,0x44,0x56,0x41,0x4C] as [Byte], length: 6)
+    var endData = NSData(bytes: [0x45,0x4E,0x44,0x56,0x41,0x4C] as [UInt8], length: 6)
     
     init(delegate: BluetoothCoreProtocol) {
         super.init()
@@ -170,7 +170,7 @@ class BluetoothCore: NSObject, CBCentralManagerDelegate, CBPeripheralManagerDele
             NSLog("Error: \(error)")
         } else {
             let targetUUID = CBUUID(string: "3D21")
-            for service in peripheral.services as [CBService] {
+            for service in peripheral.services as! [CBService] {
                 if service.UUID == targetUUID {
                     NSLog("Find Data Service")
                     peripheral.discoverCharacteristics([CBUUID(string: "3D22")], forService: service)
@@ -186,7 +186,7 @@ class BluetoothCore: NSObject, CBCentralManagerDelegate, CBPeripheralManagerDele
             NSLog("Error: \(error)")
         } else {
             let targetUUID = CBUUID(string: "3D22")
-            for characteristic in service.characteristics as [CBCharacteristic] {
+            for characteristic in service.characteristics as! [CBCharacteristic] {
                 if characteristic.UUID == targetUUID {
                     NSLog("Find Data Characteristic")
                     self.dataBuffer.length = 0
